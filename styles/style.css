@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family:"cookie";
+    src: url('/font/cookie-regular-webfont.woff') format("woff");
+}
+
+.container{
+    margin: 0 50px;
+    height: 100%;
+}
+header{
+    width: 100%;
+    height: 100vh;
+ 
+
+}
+menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    color: black;
+}
+ul{
+    list-style: none;
+    display: flex;
+
+}
+li{
+    padding-right:20px ;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+.logo{
+    font-size: 30px;
+    font-family: "Cookie";
+   
+}
+.login i{
+   padding-left: 5px;
+}
+/* --------------slider header ---------------- */
+.slider{
+   
+    height: calc(100% - 100px);
+display: grid;
+gap: 8px;
+grid-template-columns:2fr 1fr 1fr;
+grid-template-rows:repeat(2fr);
+grid-template-areas: 
+"women men kid"
+"women cosmetic accessories";
+
+}
+
+.slider hr{
+    width: 70px;
+    border: 1px solid red;
+    text-align: center;
+}
+.women {
+ background:url("../images/category-1.jpg") ;
+ background-size:cover;
+ background-position-x:-80px ;
+ grid-area:women;
+ align-content: center;
+ 
+ 
+}
+.slider-text{
+    padding-left: 20px;
+    padding-top: 100px;
+   
+    
+}
+.slider a{
+    font-family:"Montserrat" ;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.women h2{
+    font-family: "cookie";
+    font-size: 70px;
+    font-weight: 400;
+}
+.women p{
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgb(102, 102, 102);
+   
+}
+.men{
+    background:url("../images/category-2.jpg") ;
+    background-size: cover;
+    
+    
+    grid-area:men;
+}
+.kid{
+    background:url("../images/category-3.jpg") ;
+    background-size: cover;
+ grid-area:kid ;
+}
+.cosmetic {
+    background:url("../images/category-4.jpg") ;
+    background-size: cover;
+ grid-area:cosmetic ;
+}
+.accessories{
+    background:url("../images/category-5.jpg") ;
+    background-size: contain;
+ grid-area:accessories ;
+}
+/* ---------section trend ------------ */
+.trend {
+    margin:20px 160px;
+   display: flex;
+   justify-content: space-between;
+
+}
+.trend-heading{
+   
+    width: 100%;
+    height: 50px;
+    
+}
+.trend-heading hr{
+   width: 80px;
+    border: 1px solid red;
+}
+
+.trend-product{
+    width: 300px;
+    display: flex;
+    height: 100px;
+    margin-bottom: 20px;
+}
+.trend-product-info{
+    padding-left: 15px;
+    align-items: center;
+}
+.rating i{
+    color: rgb(238, 199, 24);
+    font-size: 10px;
+}
+
